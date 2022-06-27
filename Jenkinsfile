@@ -53,6 +53,21 @@ pipeline{
 	}
 	
 	}
+	      
+	      
+	      
+	      stage('Run Docker image')
+	               {
+	                 steps
+	                    {
+	                        script{
+	
+	                           sh 'docker run  kapil2808/simple-maven:latest .'
+	
+	                              }
+	                    }
+	
+	               }
  
  
  
